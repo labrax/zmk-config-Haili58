@@ -20,11 +20,11 @@
 
         layer_1 {
             bindings = <
-&kp SEMICOLON  &kp F1  &kp F2  &kp F3  &kp F4             &kp F5                &kp F6       &kp F7         &kp F8          &kp F9           &kp F10               &kp F11
-&trans         &trans  &trans  &trans  &kp K_PREVIOUS     &kp K_NEXT            &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME        &kp END          &kp DEL               &kp F12
-&trans         &kp F9  &kp F8  &trans  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP       &kp LEFT     &kp DOWN       &kp UP_ARROW    &kp RIGHT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans         &trans  &trans  &kp F7  &kp K_MUTE         &kp K_PLAY_PAUSE      &kp INSERT   &kp CAPSLOCK   &kp SCROLLLOCK  &kp PLUS         &kp NON_US_BACKSLASH  &kp NON_US_HASH
-&trans         &trans  &trans  &trans  &trans             &trans                &trans       &trans         &trans          &kp PRINTSCREEN  &kp K_MENU            &trans
+&kp SEMICOLON  &kp F1       &kp F2      &kp F3      &kp F4             &kp F5                &kp F6       &kp F7         &kp F8          &kp F9           &kp F10               &kp F11
+&trans         &kp LS(F10)  &kp LS(F9)  &kp LC(F8)  &kp K_PREVIOUS     &kp K_NEXT            &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME        &kp END          &kp DEL               &kp F12
+&trans         &kp F9       &kp F8      &kp LS(F8)  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP       &kp LEFT     &kp DOWN       &kp UP_ARROW    &kp RIGHT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans         &kp LA(F9)   &trans      &kp F7      &kp K_MUTE         &kp K_PLAY_PAUSE      &kp INSERT   &kp CAPSLOCK   &kp SCROLLLOCK  &kp PLUS         &kp NON_US_BACKSLASH  &kp NON_US_HASH
+&trans         &trans       &trans      &trans      &trans             &trans                &trans       &trans         &trans          &kp PRINTSCREEN  &kp K_MENU            &trans
             >;
         };
 

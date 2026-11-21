@@ -1,10 +1,27 @@
 include:
   - board: nice_nano_v2
     shield: settings_reset
+    artifact-name: settings_reset
+
+  # Variant 1: no dongle. Left half is the split central and talks USB/BLE.
   - board: nice_nano_v2
     shield: haili58_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: haili58_left_central
+
+  # Shared by both variants: the right half is always a peripheral.
   - board: nice_nano_v2
     shield: haili58_right
+    artifact-name: haili58_right
 
+  # Variant 2: dongle is the split central; both halves are peripherals.
+  - board: nice_nano_v2
+    shield: haili58_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: haili58_dongle
+  - board: nice_nano_v2
+    shield: haili58_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: haili58_left_peripheral

@@ -1,0 +1,14 @@
+#include "haili58.dtsi"
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-mock";
+        rows = <1>;
+        columns = <1>;
+        events = <0>;
+    };
+};
+
+&physical_layout_haili58 {
+    kscan = <&kscan0>;
+};
